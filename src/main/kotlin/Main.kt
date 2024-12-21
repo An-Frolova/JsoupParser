@@ -5,7 +5,7 @@ import org.jsoup.select.Elements
 fun main() {
 
     val doc: Document = Jsoup.connect(URL).get()
-    val elements: Elements = doc.select(".sc-2aegk7-2")
+    val elements: Elements = doc.select("article")
 
     for (element in elements) {
         val text = element.text()
